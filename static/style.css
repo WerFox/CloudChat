@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #2E3F51;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    object-fit: contain;
+}
+
+.register {
+    width: 224px;
+    height: 83px;
+    background-color: #E54E43;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    color: white;
+    transform: translate(450px, 250px);
+}
+
+.register:active {
+    background-color: #e54e4387;
+}
+
+.sign-in {
+    width: 224px;
+    height: 83px;
+    background-color: #E54E43;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    color: white;
+    transform: translate();
+    transform: translate(800px, 250px);
+}
+
+.sign-in:active {
+    background-color: #e54e4387;
+}

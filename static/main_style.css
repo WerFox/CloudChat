@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #2E3F51;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #2E3F51;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.contacts {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.contacts div {
+    width: 50px;
+    height: 50px;
+    background-color: #4A5C70;
+    border-radius: 50%;
+}
+
+.messages {
+    background-color: #1E1E1E;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.text {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.input {
+    display: flex;
+    padding: 20px;
+    background-color: #1E1E1E;
+    gap: 10px;
+}
+
+.input input {
+    flex-grow: 1;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.send {
+    background-color: #E54E43;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    border-left: 1px solid #333;
+}
+
+.profile::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #E54E43;
+    border-radius: 50%;
+}
