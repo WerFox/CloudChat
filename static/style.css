@@ -45,10 +45,27 @@ header {
     border-radius: 20px;
     font-size: 25px;
     color: white;
-    transform: translate();
     transform: translate(800px, 250px);
 }
 
 .sign-in:active {
     background-color: #e54e4387;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .sign-in {
+        width: 120px;
+        height: 70px;
+        transform: translate(-50px, 250px);
+    }
+
+    .register {
+        width: 120px;
+        height: 70px;
+        transform: translate(400px, 250px);
+    }
+
+    .logo {
+        transform: translateX(-75px);
+    }
 }
