@@ -52,3 +52,15 @@ input {
 .sign-in:active {
     background-color: #e54e4387;
 }
+
+.back {
+    height: 60px;
+    background-color: #eb493d8d;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    transform: translate(3px, 160px);
+}

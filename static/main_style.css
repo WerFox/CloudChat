@@ -28,22 +28,44 @@ header {
     height: 200px;
     object-fit: contain;
     margin-bottom: 20px;
+    transform: translate(100px, 50px);
 }
 
 .contacts {
     width: 250px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-    padding-top: 10px;
 }
 
-.contacts div {
-    width: 50px;
-    height: 50px;
-    background-color: #4A5C70;
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+    transform: translate(-30px, -30px);
+}
+
+.contact img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.contact p {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.contact:hover img {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(229, 78, 67, 0.6);
+}
+
+.contact:hover p {
+    color: #E54E43;
 }
 
 .messages {
@@ -83,6 +105,11 @@ header {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.send:hover {
+    background-color: #ff5a4f;
 }
 
 .profile {
